@@ -19,7 +19,7 @@ const expenses = [
         date: new Date(1996, 4, 23)
     }, {
         id: 'e4',
-        title: 'New Desk',
+        title: 'New Desk(Wooden)',
         amount: 450,
         date: new Date(1994, 8, 6)
     }];
