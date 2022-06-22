@@ -1,3 +1,4 @@
+import React from "react";
 import './App.css';
 import Expenses from "./components/Expenses";
 
@@ -25,9 +26,16 @@ const expenses = [
     }];
 
 function App() {
+
+    //Asagidakine alternatif olarak boyle de yazabiliriz. Altta yazdigimiz JSX kodlar bu sekle donusturuluyor aslinda.
+
+    /*return React.createElement('div', {},
+        React.createElement('h2', {}, "Let's get started!"),
+        React.createElement(Expenses, {items: expenses}));*/
+
     return (
         <div className="App">
-            <h2>Let's gets started!</h2>
+            <h2>Let's get started!</h2>
             <Expenses items={expenses}/>
         </div>
     );
