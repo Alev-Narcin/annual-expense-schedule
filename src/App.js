@@ -25,7 +25,7 @@ const expenses = [
         date: new Date(1994, 8, 6)
     }];
 
-function App() {
+const App = () => {
 
     //Asagidakine alternatif olarak boyle de yazabiliriz. Altta yazdigimiz JSX kodlar bu sekle donusturuluyor aslinda.
 
