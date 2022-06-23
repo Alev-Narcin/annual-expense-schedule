@@ -27,7 +27,6 @@ const expenses = [
     }];
 
 const App = () => {
-
     //Asagidakine alternatif olarak boyle de yazabiliriz. Altta yazdigimiz JSX kodlar bu sekle donusturuluyor aslinda.
 
     /*return React.createElement('div', {},
