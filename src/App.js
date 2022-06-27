@@ -26,11 +26,6 @@ const DUMMY_EXPENSES = [
         date: new Date(1994, 8, 6)
     }];
 
-const addExpenseHandler = expense => {
-    console.log('In App js');
-    console.log(expense);
-};
-
 const App = () => {
     const [expenses, setExpenses] = useState(DUMMY_EXPENSES);
 
