@@ -1,9 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 import './App.css';
 import Expenses from "./components/Expenses/Expenses";
 import NewExpense from "./components/NewExpense/NewExpense";
 
-const expenses = [
+const DUMMY_EXPENSES = [
     {
         id: 'e1',
         title: 'Toilet Paper',
@@ -32,6 +32,15 @@ const addExpenseHandler = expense => {
 };
 
 const App = () => {
+    const [expenses, setExpenses] = useState(DUMMY_EXPENSES);
+
+    const addExpenseHandler = (expense) => {
+        //State i guncellemenin en saglikli yolu.
+        setExpenses((prevExpenses) => {
+            return ([expense, ...prevExpenses]);
+        });
+    };
+
     //Asagidakine alternatif olarak boyle de yazabiliriz. Altta yazdigimiz JSX kodlar bu sekle donusturuluyor aslinda.
 
     /*return React.createElement('div', {},
