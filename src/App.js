@@ -26,6 +26,11 @@ const expenses = [
         date: new Date(1994, 8, 6)
     }];
 
+const addExpenseHandler = expense => {
+    console.log('In App js');
+    console.log(expense);
+};
+
 const App = () => {
     //Asagidakine alternatif olarak boyle de yazabiliriz. Altta yazdigimiz JSX kodlar bu sekle donusturuluyor aslinda.
 
@@ -35,7 +40,7 @@ const App = () => {
 
     return (
         <div className="App">
-            <NewExpense/>
+            <NewExpense onAddExpense={addExpenseHandler}/>
             <Expenses items={expenses}/>
         </div>
     );
